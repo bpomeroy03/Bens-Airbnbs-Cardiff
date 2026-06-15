@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "PowerShell($gh = Get-Command gh -ErrorAction SilentlyContinue; if \\($gh\\) { \"FOUND: $\\($gh.Source\\)\"; gh --version } else { \"gh not found in PATH\" }; \"--- git config ---\"; git config --global user.name; git config --global user.email)",
+      "WebFetch(domain:www.airbnb.co.uk)",
+      "PowerShell(git config --global user.email \"bpomeroy03@gmail.com\")",
+      "PowerShell(git config --global user.name \"Ben Pomeroy\")",
+      "PowerShell(git init \"C:\\\\Users\\\\bpome\\\\Desktop\\\\Claude Cowork\\\\Templates\\\\Bens Airbnb\" 2>&1)",
+      "PowerShell(\"done\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
